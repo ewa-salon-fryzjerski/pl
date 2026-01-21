@@ -682,30 +682,40 @@ img.top-qr {
   <!-- Parallax video -->
   <section class="parallax-video" id="videoSection" aria-label="Nagłówek strony">
   
-
   <video autoplay muted loop playsinline id="bgVideo" aria-hidden="true">
     <source src="assets/video/2.mp4" type="video/mp4">
   </video>
 
   <div class="overlay">
-  <div class="top-bar" role="navigation" aria-label="Górny pasek" style="display:flex;justify-content:space-between;align-items:center;width:100%;padding:10px 20px;">
+    <div class="top-bar" role="navigation" aria-label="Górny pasek" 
+         style="display:flex;justify-content:space-between;align-items:center;width:100%;padding:10px 20px;">
 
-  <!-- Lewa część: logo -->
-  <div class="logo-box">
-    <img src="assets/images/logo-bt-l-192x192.png" alt="Logo" class="top-logo">
-  </div>
+      <!-- Lewa część: logo -->
+      <div class="logo-box">
+        <img src="assets/images/logo-bt-l-192x192.png" alt="Logo" class="top-logo">
+      </div>
 
-  <!-- Prawa część: ikony -->
-  <div class="icon-box" style="display:flex;gap:20px;">
-    <a href="#contacts02-0" class="top-icon" aria-label="Zadzwoń">
-      <span class="mbr-iconfont mobi-mbri-phone mobi-mbri"></span>
-    </a>
-    <a href="#contacts02-0" class="top-icon" aria-label="Mapa">
-      <span class="mbr-iconfont mobi-mbri-map-pin mobi-mbri"></span>
-    </a>
-  </div>
+      <!-- Prawa część: ikony + QR -->
+      <div class="icon-box" style="display:flex;gap:20px;align-items:center;">
 
-</div>
+        <a href="#contacts02-0" class="top-icon" aria-label="Zadzwoń">
+          <span class="mbr-iconfont mobi-mbri-phone mobi-mbri"></span>
+        </a>
+
+        <a href="#contacts02-0" class="top-icon" aria-label="Mapa">
+          <span class="mbr-iconfont mobi-mbri-map-pin mobi-mbri"></span>
+        </a>
+
+        <!-- QR kod bez zaokrągleń -->
+        <div class="top-right">
+          <a href="https://1277d3236ce24b599d58be512e830c43.elf.site" target="_blank" rel="noopener" aria-label="Odwiedź stronę widgetu">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2F1277d3236ce24b599d58be512e830c43.elf.site&size=100x100"
+                 alt="QR kod" class="top-qr" style="height:100px;width:100px;">
+          </a>
+        </div>
+
+      </div>
+    </div>
 
 
   <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1 animate__animated animate__fadeInUp">
@@ -1013,4 +1023,5 @@ img.top-qr {
 
 </body>
 </html>
+
 
